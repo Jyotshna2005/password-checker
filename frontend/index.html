@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Check whether a password has appeared in known data breaches." />
+  <title>VaultCheck — Password Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">V</span><span>vault<span class="brand-accent">check</span></span></a>
+    <span class="top-note"><span class="live-dot"></span> PRIVACY-FIRST PASSWORD CHECK</span>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span> TAKE CONTROL OF YOUR DIGITAL SAFETY</div>
+      <h1>Is your password<br><span>still a secret?</span></h1>
+      <p class="hero-copy">Check whether your password has appeared in known data breaches. Your actual password is never sent to the breach database.</p>
+
+      <div class="checker-card">
+        <div class="card-heading">
+          <div class="lock-icon">⌑</div>
+          <div><h2>Password exposure check</h2><p>Enter a password to scan breach records</p></div>
+          <span class="secure-tag">SECURE LOOKUP</span>
+        </div>
+        <form id="checkForm">
+          <label for="passwordInput">YOUR PASSWORD</label>
+          <div class="input-wrap">
+            <input id="passwordInput" type="password" placeholder="Enter a password to check" autocomplete="off" required minlength="1" />
+            <button type="button" id="togglePassword" class="show-btn" aria-label="Show password">SHOW</button>
+          </div>
+          <div class="input-hint"><span>ⓘ</span> Your password is checked using a privacy-preserving hash range.</div>
+          <button class="check-btn" type="submit" id="checkButton"><span>Check password</span><span class="arrow">↗</span></button>
+        </form>
+        <div id="result" class="result hidden" aria-live="polite"></div>
+      </div>
+      <div class="trust-row"><span>✓ No password storage</span><span>✓ No password sent to HIBP</span><span>✓ Secure hash-range lookup</span></div>
+    </section>
+
+    <section class="history-section">
+      <div class="section-head"><div><div class="eyebrow">YOUR ACTIVITY</div><h2>Recent checks</h2></div><button id="refreshHistory" class="text-btn">↻ Refresh</button></div>
+      <div id="historyList" class="history-list"><div class="empty-state">Your recent check results will appear here.</div></div>
+    </section>
+    <footer><span class="brand-mini">V</span> VaultCheck <span class="footer-sep">·</span> Built for safer digital habits <span class="footer-right">Passwords are never saved.</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "8f07d5fe-82f7-43d5-a52d-839e19075ca9",
+    "label": "Password check",
+    "pwnedCount": 52372427,
+    "favorite": false,
+    "checkedAt": "2026-11-08T07:23:22.105Z"
+  },
+  {
+    "id": "020e8c84-8046-41af-a091-e07fed9f1868",
+    "label": "Password check",
+    "pwnedCount": 2266543,
+    "favorite": false,
+    "checkedAt": "2026-11-08T07:31:58.416Z"
+  },
+  {
+    "id": "67612c24-ec4c-4897-9fc4-17876f0325c2",
+    "label": "Password check",
+    "pwnedCount": 0,
+    "favorite": false,
+    "checkedAt": "2026-11-08T11:09:16.648Z"
+  },
+  {
+    "id": "6e4f9611-4463-48c3-96b4-49108081e635",
+    "label": "Password check",
+    "pwnedCount": 0,
+    "favorite": false,
+    "checkedAt": "2026-11-08T11:10:57.364Z"
+  }
+]
